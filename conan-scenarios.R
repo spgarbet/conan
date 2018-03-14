@@ -1,4 +1,4 @@
-x <- read.csv("~/Desktop/conan-scenarios.csv", stringsAsFactors=FALSE)
+x <- read.csv("~/Projects/ordering/conan-scenarios.csv", stringsAsFactors=FALSE)
 
 x <- subset(x, !is.na(Scenario) & Scenario != "")
 x <- x[, !names(x) %in% c("X", "X.1", "X.2", "X.3", "X.4", "X.5", "X.6")]
@@ -42,7 +42,9 @@ doit <- function(y)
     }
   
     cat("'", chosen, "' by painting: ", paste(names(eliminate), collapse=", "), "\n", sep="")
+    thelast <- rownames(y)
     y <- y[!rownames(y) %in% chosen,!colnames(y) %in% names(eliminate) ]
+    if(length(rownames(y)) == 0) cat(paste("'", thelast, "'"))
   }
 }
 #doit(y)
