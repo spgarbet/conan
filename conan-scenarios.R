@@ -1,4 +1,4 @@
-x <- read.csv("~/Projects/ordering/conan-scenarios.csv", stringsAsFactors=FALSE)
+x <- read.csv("conan-scenarios.csv", stringsAsFactors=FALSE)
 
 x <- subset(x, !is.na(Scenario) & Scenario != "")
 x <- x[, !names(x) %in% c("X", "X.1", "X.2", "X.3", "X.4", "X.5", "X.6")]
@@ -44,7 +44,7 @@ doit <- function(y)
     cat("'", chosen, "' by painting: ", paste(names(eliminate), collapse=", "), "\n", sep="")
     thelast <- rownames(y)
     y <- y[!rownames(y) %in% chosen,!colnames(y) %in% names(eliminate) ]
-    if(length(rownames(y)) == 0) cat(paste("'", thelast, "'"))
+    if(length(rownames(y)) == 0) cat(paste0("'", thelast, "'"))
   }
 }
 #doit(y)
@@ -62,15 +62,45 @@ y <- y[, !colnames(y) %in% c(
   "Valeria", "Thalis..Princess.", "Captain",
   "Skulthus", "Zaporavo", "Zogar.Sag",
   "Bossonian.Archers", "Hyenas", "Pict.Hunters", 
-  "Pirates", "Dark.Demon", "Giant.Snake", "Thaug",
-  "Tentacles")]#,
-  #"Bossonian.Guards", "Pict.Warriors", "Pict.Archers",
-  # "Thak", "Pallantides", "Thag", "Yogah.of.Yag","Kushite.Witch.Hunters",
-  # "Belit.s.Guards", "Outer.Dark.Demon", "Khosatral.Khel",
-  # "Conan..Thief.", "Crossbowmen", "Zelata", "Giant.Wolves","N.Gora","Pelias",
-  # "Belit..Savage.", "Conan..Amra.", "Gitara","Kerim.Shah", "Giant.Spider",
-  # "Skeletons", "Mummies", "Constantius", "Bone.Golem", "Giant.Scorpion", "Ageera",
-  # "Hyperborean.Primitive", "Conan..General.", "Akivasha", "Thog", "Natohk")]
+  "Pirates", "Dark.Demon", "Giant.Snake", "Thaug", "Tentacles",
+  "Thak", "Pallantides", "Olgerd.Vladislav"
+  
+  # # Next group
+  # "Bossonian.Guards", "Thog", "Yogah.of.Yag",
+  #  
+  # # Next Plans -- all beefcake
+  # "Pict.Warriors", "Pict.Archers",
+  # "Conan..Warlord.", "Taurus", "Conan..Thief.", "Conan..Wanderer.",
+  # "Conan..Amra.", "Constantius", "Conan..Mercenary.", "Conan..General.",
+  #  
+  # # All the dark flesh
+  # "Kushite.Witch.Hunters", "N.Gora", "Belit.s.Guards",
+  # "Amboola", "Ageera", "Baal.Pteor",
+  #  
+  # # Ladies & Gentlemen
+  # "Valkyrie", "Balthus.Slasher", "Zelata",
+  # "Belit..Savage.", "Khemsa", "Akivasha", "Gitara", "Atali",
+  # 
+  # # Undead Hordes
+  # "Mummies", "Pelias", "Warlock", "Natohk", "Skeletons",
+  # 
+  # # All the Demons
+  # "Outer.Dark.Demon", "Forest.Demon", "Swamp.Demon",
+  # "Bone.Golem", "Khosatral.Khel",
+  # 
+  # # Critters
+  # "Camel", "Giant.Wolves", "Giant.Scorpion", "Grey.Man.Ape",
+  # "Giant.Spider", "Crows", "Sabertooth.Tiger",
+  # 
+  # # Armoured
+  # "Black.Dragons", "Hyperborean.Primitive", "Kerim.Shah", "Kothian.Archer",
+  # "Crossbowmen",
+  # 
+  # # Nordheim
+  # "Giants", "Niord", "Aesir.Warriors", "Vanir.Warriors"
+
+)]
+
 
 cat("\n\nFrom What I have painted!\n")
 doit(y)
