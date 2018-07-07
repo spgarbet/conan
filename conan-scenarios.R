@@ -56,41 +56,58 @@ rownames(y) <- x$Scenario
 
 # Turn into 0 or 1 groups
 y[] <- vapply(y, function(z) if(is.na(z)) 0 else 1, numeric(1))
-# Eliminate painted figures
+# Eliminate painted figures -- This is my ordering-- yours will inevitably vary
 y <- y[, !colnames(y) %in% c(
+  # "Pict.Hunters"
+  
   "Belit", "Conan", "Shevatas", "Hadrathus",
   "Valeria", "Thalis..Princess.", "Captain",
   "Skulthus", "Zaporavo", "Zogar.Sag",
-  "Bossonian.Archers", "Hyenas", "Pict.Hunters", 
+  "Bossonian.Archers", "Hyenas", "Pict.Hunters",
   "Pirates", "Dark.Demon", "Giant.Snake", "Thaug", "Tentacles",
-  "Thak", "Pallantides", "Olgerd.Vladislav"
+  "Thak", "Pallantides", "Olgerd.Vladislav", "Yogah.of.Yag",
+  
+  # 3 scenarios opened, fully painted.
   
   # # Next group
-  # "Bossonian.Guards", "Thog", "Yogah.of.Yag",
-  #  
+  "Bossonian.Guards", "Thog",
+  
+  # 11 scenarios opened, fully painted.
+  
   # # Next Plans -- all beefcake
-  # "Pict.Warriors", "Pict.Archers",
-  # "Conan..Warlord.", "Taurus", "Conan..Thief.", "Conan..Wanderer.",
-  # "Conan..Amra.", "Constantius", "Conan..Mercenary.", "Conan..General.",
+  "Pict.Warriors", "Pict.Archers",
+  "Conan..Warlord.", "Taurus", "Conan..Thief.", "Conan..Wanderer.",
+  "Conan..Amra.", "Constantius", "Conan..Mercenary.", "Conan..General.",
+  "Khosatral.Khel",
+  
+  # 19 Scenarios opened, fully painted
+  
   #  
   # # All the dark flesh
-  # "Kushite.Witch.Hunters", "N.Gora", "Belit.s.Guards",
-  # "Amboola", "Ageera", "Baal.Pteor",
+  "Kushite.Witch.Hunters", "N.Gora", "Belit.s.Guards",
+  "Amboola", "Ageera", "Baal.Pteor",
+  
+  # 22 Scenarios opened
+  
   #  
   # # Ladies & Gentlemen
-  # "Valkyrie", "Balthus.Slasher", "Zelata",
-  # "Belit..Savage.", "Khemsa", "Akivasha", "Gitara", "Atali",
+  "Valkyrie", "Balthus.Slasher", "Zelata",
+  "Belit..Savage.", "Khemsa", "Akivasha", "Gitara", "Atali",
+  
+  # 25 Scenarios opened
+
+  # Critters
+  "Camel", "Giant.Wolves", "Giant.Scorpion", "Grey.Man.Ape",
+  "Giant.Spider", "Crows", "Sabertooth.Tiger",
+  
+  # 39 Scenarios opened
+  
+  # Undead Hordes
+  "Mummies", "Pelias", "Warlock", "Natohk", "Skeletons",
   # 
-  # # Undead Hordes
-  # "Mummies", "Pelias", "Warlock", "Natohk", "Skeletons",
-  # 
-  # # All the Demons
-  # "Outer.Dark.Demon", "Forest.Demon", "Swamp.Demon",
-  # "Bone.Golem", "Khosatral.Khel",
-  # 
-  # # Critters
-  # "Camel", "Giant.Wolves", "Giant.Scorpion", "Grey.Man.Ape",
-  # "Giant.Spider", "Crows", "Sabertooth.Tiger",
+  # All the Demons
+  "Outer.Dark.Demon", "Forest.Demon", "Swamp.Demon",
+  "Bone.Golem"
   # 
   # # Armoured
   # "Black.Dragons", "Hyperborean.Primitive", "Kerim.Shah", "Kothian.Archer",
