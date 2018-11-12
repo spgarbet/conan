@@ -14,6 +14,7 @@ y[] <- vapply(y, function(z) if(is.na(z)) 0 else 1, numeric(1))
 
 doit <- function(y)
 {
+  current <- 1
   while(length(rownames(y) > 0))
   {
     min_paint <- min(rowSums(y))
@@ -41,10 +42,16 @@ doit <- function(y)
       }
     }
   
-    cat("'", chosen, "' by painting: ", paste(names(eliminate), collapse=", "), "\n", sep="")
+    cat(current, " '", chosen, "' by painting: ", paste(names(eliminate), collapse=", "), "\n", sep="")
+    current <- current + 1
+    
     thelast <- rownames(y)
     y <- y[!rownames(y) %in% chosen,!colnames(y) %in% names(eliminate) ]
-    if(length(rownames(y)) == 0) cat(paste0("'", thelast, "'"))
+    if(length(rownames(y)) == 0)
+    {
+      cat("And ", length(thelast), "more: ")
+      cat(paste0("'", thelast, "'"))
+    }
   }
 }
 #doit(y)
@@ -66,55 +73,56 @@ y <- y[, !colnames(y) %in% c(
   "Bossonian.Archers", "Hyenas", "Pict.Hunters",
   "Pirates", "Dark.Demon", "Giant.Snake", "Thaug", "Tentacles",
   "Thak", "Pallantides", "Olgerd.Vladislav", "Yogah.of.Yag",
-  
-  # 3 scenarios opened, fully painted.
+  "Thog",
   
   # # Next group
-  "Bossonian.Guards", "Thog",
-  
-  # 11 scenarios opened, fully painted.
-  
-  # # Next Plans -- all beefcake
-  "Pict.Warriors", "Pict.Archers",
-  "Conan..Warlord.", "Taurus", "Conan..Thief.", "Conan..Wanderer.",
-  "Conan..Amra.", "Constantius", "Conan..Mercenary.", "Conan..General.",
-  "Khosatral.Khel",
-  
-  # 19 Scenarios opened, fully painted
-  
-  #  
-  # # All the dark flesh
-  "Kushite.Witch.Hunters", "N.Gora", "Belit.s.Guards",
-  "Amboola", "Ageera", "Baal.Pteor",
-  
-  # 22 Scenarios opened
-  
-  #  
-  # # Ladies & Gentlemen
-  "Valkyrie", "Balthus.Slasher", "Zelata",
-  "Belit..Savage.", "Khemsa", "Akivasha", "Gitara", "Atali",
-  
-  # 25 Scenarios opened
+  "Bossonian.Guards",
 
+  "Outer.Dark.Demon",
+  "Camel",
+  # 
+  # # Next Plans -- all beefcake
+  "Pict.Warriors",
+  "Pict.Archers",
+  "Taurus", 
+  "Conan..Amra.",
+  "Conan..Warlord.",  "Khosatral.Khel",
+  "Conan..Thief.", "Conan..Wanderer.",
+  "Constantius", "Conan..Mercenary.", "Conan..General."
+  # 22 Scenarios opened, fully painted
+  
+    
+  # All the dark flesh
+  # "Kushite.Witch.Hunters", "N.Gora", "Belit.s.Guards",
+  # "Amboola", "Ageera", "Baal.Pteor",
+  # 28 Scenarios opened
+
+  # Ladies & Gentlemen
+  # "Valkyrie", "Balthus.Slasher", "Zelata",
+  # "Belit..Savage.", "Khemsa", "Akivasha", "Gitara", "Atali",
+  # 34 Scenarios opened
+  
   # Critters
-  "Camel", "Giant.Wolves", "Giant.Scorpion", "Grey.Man.Ape",
-  "Giant.Spider", "Crows", "Sabertooth.Tiger",
-  
-  # 39 Scenarios opened
-  
+  # "Giant.Wolves", "Giant.Scorpion", "Grey.Man.Ape",
+  # "Giant.Spider", "Crows", "Sabertooth.Tiger",
+  # 51 Scenarios opened
+
   # Undead Hordes
-  "Mummies", "Pelias", "Warlock", "Natohk", "Skeletons",
-  # 
+  # "Mummies", "Pelias", "Warlock", "Natohk", "Skeletons",
+  # 64 Scenarios opened
+ 
   # All the Demons
-  "Outer.Dark.Demon", "Forest.Demon", "Swamp.Demon",
-  "Bone.Golem"
-  # 
-  # # Armoured
+  # "Forest.Demon", "Swamp.Demon","Bone.Golem",
+  # 76 Scenarios opened  
+ 
+  # Armoured
   # "Black.Dragons", "Hyperborean.Primitive", "Kerim.Shah", "Kothian.Archer",
   # "Crossbowmen",
-  # 
-  # # Nordheim
+  # 90 Scenarios opened
+  
+  # Nordheim
   # "Giants", "Niord", "Aesir.Warriors", "Vanir.Warriors"
+  # 93 Scenarios opened
 
 )]
 
