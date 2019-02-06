@@ -149,7 +149,7 @@ y <- y[, !colnames(y) %in% c(
   # Khitan
   #,"Shuang.Mian","Javelin.Throwers"
   #,"Honor.Guards", "Khitan.Guards"
-  #,"Foo.Dogs"
+  #,"Foo.Dogs", "Earth.Demon"
   # 115 Scenarios!!! (+8)
 )]
 
