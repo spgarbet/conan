@@ -88,8 +88,8 @@ y <- y[, !colnames(y) %in% c(
   ,"Giant.Wolves"
   # 28 Scenarios opened (+1)
   
-  # Ladies & Gentlemen Part 1 (6 models)
-  ,"Zelata", "Belit..Savage.", "Balthus.Slasher", "Ageera"
+  # Ladies & Gentlemen Part 1 (7 models)
+  ,"Zelata" ,"Belit..Savage." ,"Balthus.Slasher" ,"Ageera" ,"Belit..Brom." ,"Belit..Xavier."
   # 36 Scenarios Opened (+8)
   
   # Undead palooza
@@ -116,11 +116,11 @@ y <- y[, !colnames(y) %in% c(
   #,"Pelias", "Warlock", "Natohk", "Niord"
   # 75 Scenarios Opened (+15)
   
-  # Ladies and Gents Part 2 (Full campaign unlocked)
+  # Ladies and Gents Part 2
   #,"Akivasha", "Gitara", "Valkyrie", "Khemsa", "Atali"
   # 89 Scenarios opened (+14)  (5 models)
 
-  # Armoured 
+  # Armoured  (Full campaign unlocked)
   #,"Kerim.Shah", "Black.Dragons", "Kothian.Archer"
   # 99 Scenarios opened (+10)  (7 Models)
   
@@ -128,7 +128,7 @@ y <- y[, !colnames(y) %in% c(
   # 100 Scenarios opened (+1) (10 models)
   
   # Remaining critters, start Nordheim (3 models)
-  #,"Giants","Sabertooth.Tiger"
+  #,"Giants" ,"Sabertooth.Tiger"
   # 101 Scenarios opened (+1)
   
   #,"Kushite.Witch.Hunters"  
