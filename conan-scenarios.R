@@ -67,9 +67,13 @@ y <- y[, !colnames(y) %in% c(
   "Belit", "Conan", "Shevatas", "Hadrathus",
   "Valeria", "Thalis..Princess.", "Captain",
   "Skulthus", "Zaporavo", "Zogar.Sag",
-  "Bossonian.Archers", "Hyenas", "Pict.Hunters",
-  "Pirates", "Dark.Demon", "Giant.Snake", "Thaug", "Tentacles",
-  "Thak", "Pallantides", "Olgerd.Vladislav", "Yogah.of.Yag",
+  "Hyenas", "Pict.Hunters",
+  "Bossonian.Archers",
+  "Thaug", "Tentacles",
+  "Pirates",
+  "Dark.Demon", "Giant.Snake",
+  "Thak", 
+  "Pallantides", "Olgerd.Vladislav", "Yogah.of.Yag",
   "Thog",
   "Bossonian.Guards",
   "Outer.Dark.Demon",
@@ -96,7 +100,7 @@ y <- y[, !colnames(y) %in% c(
   #,"Mummies" 
   # 37 Scenarios Opened (+2)  (15 models)
   
-  # Minions from King complete!
+  # King minions complete!
   #,"Skeletons"
   # 40 Scenarios Opened (+3)  (10 models)
   
@@ -120,7 +124,7 @@ y <- y[, !colnames(y) %in% c(
   #,"Akivasha", "Gitara", "Valkyrie", "Khemsa", "Atali"
   # 79 Scenarios opened (+12)  (5 models)
 
-  # Armoured 
+  # Armoured (King Complete)
   #,"Kerim.Shah", "Black.Dragons", "Kothian.Archer"
   # 85 Scenarios opened (+6)  (7 Models)
   
@@ -134,18 +138,18 @@ y <- y[, !colnames(y) %in% c(
   #,"Giants","Sabertooth.Tiger"
   # 94 Scenarios opened (+3)
   
-  # Finish Nordheim (15 models)
+  # Nordheim complete (15 models)
   #,"Aesir.Warriors" ,"Vanir.Warriors"
   # 98 Scenarios opened (+4)
   
-  #,"Black.Ones"
+  #,"Black.Ones" (Add Ons complete)
   # 99 Scenarios opened (+1)  (10 models)
 
-  # Stygia Leaders
+  # Stygia leaders
   #,"Ikhmet" ,"Shentu" ,"Thoth.Amon"
   # 101 Scenarios opened (+2) (3 models)
   
-  # Stygian Minions (10 models)
+  # Stygian complete (10 models)
   #,"Eternal.Guard","Assassins"
   # 106 Scenarios opened (+5)
   
