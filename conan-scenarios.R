@@ -92,62 +92,66 @@ y <- y[, !colnames(y) %in% c(
   ,"Zelata" ,"Belit..Savage." ,"Balthus.Slasher" ,"Ageera" ,"Belit..Brom." ,"Belit..Xavier."
   # 36 Scenarios Opened (+8)
   
+  # Pulled forward due to game
+  # 41 Scenarios opened
+  ,"Hyperborean.Primitive" ,"Akivasha" ,"Winged.Ape" ,"Giant.Spider"
+  
   # Undead palooza
   #,"Mummies" 
-  # 38 Scenarios Opened (+2)  (15 models)
+  # 43 Scenarios Opened (+2)  (15 models)
   
   # Minions from King complete!
   #,"Skeletons"
-  # 41 Scenarios Opened (+3)  (10 models)
+  # 48 Scenarios Opened (+5)  (10 models)
+  
+  # Wizards & and a Warrior (4 models)
+  #,"Pelias", "Warlock", "Natohk", "Niord"
+  # 61 Scenarios Opened (+13)
+  
+  # Critter festival
+  #,"Grey.Man.Ape" ,"Forest.Demon"  ,"Crows"
+  # 70 Scenarios Opened (+9)  (8 models)
   
   # Stingers
   #,"Giant.Scorpion","Scorpion.Broodmother"
-  # 42 Scenarios Opened (+1) (11 models)
-  
-  # Critter festival
-  #,"Grey.Man.Ape", "Forest.Demon","Hyperborean.Primitive", "Crows"
-  # 50 Scenarios Opened (+8)  (8 models)
+  # 71 Scenarios Opened (+1) (11 models)
   
   # Most critters complete
-  #,"Giant.Spider", "Swamp.Demon",  "Bone.Golem"
-  # 60 Scenarios Opened (+10)  (3 models)
+  #,"Swamp.Demon" ,"Bone.Golem"
+  # 81 Scenarios Opened (+10)  (3 models)
 
-  # Wizards & and a Warrior (4 models)
-  #,"Pelias", "Warlock", "Natohk", "Niord"
-  # 75 Scenarios Opened (+15)
-  
   # Ladies and Gents Part 2
-  #,"Akivasha", "Gitara", "Valkyrie", "Khemsa", "Atali"
-  # 89 Scenarios opened (+14)  (5 models)
+  #, "Gitara", "Valkyrie", "Khemsa", "Atali"
+  # 96 Scenarios opened (+15)  (5 models)
 
   # Armoured  (Full campaign unlocked)
-  #,"Kerim.Shah", "Black.Dragons", "Kothian.Archer"
-  # 99 Scenarios opened (+10)  (7 Models)
+  #,"Kerim.Shah", "Black.Dragons" ,"Kothian.Archer"
+  # 100 Scenarios opened (+4)  (7 Models)
   
   #,"Crossbowmen" 
-  # 100 Scenarios opened (+1) (10 models)
+  # 101 Scenarios opened (+1) (10 models)
   
   # Remaining critters, start Nordheim (3 models)
   #,"Giants" ,"Sabertooth.Tiger"
-  # 101 Scenarios opened (+1)
+  # 102 Scenarios opened (+1)
   
   #,"Kushite.Witch.Hunters"  
-  # 105 Scenarios opened (+4)  (5 models)
+  # 106 Scenarios opened (+4)  (5 models)
 
   # Finish Nordheim (15 models)
   #,"Aesir.Warriors" ,"Vanir.Warriors"
-  # 108 Scenarios opened (+3)
+  # 109 Scenarios opened (+3)
   
   #,"Black.Ones"
-  # 109 Scenarios opened (+1)  (10 models)
+  # 110 Scenarios opened (+1)  (10 models)
 
   # Stygia Leaders
   #,"Ikhmet" ,"Shentu" ,"Thoth.Amon"
-  # 111 Scenarios opened (+2) (3 models)
+  # 112 Scenarios opened (+2) (3 models)
   
   # Stygian Minions (10 models)
   #,"Eternal.Guard","Assassins"
-  # 106 Scenarios opened (+5)
+  # 118 Scenarios opened (+6)
   
   # Khitai (22 models)
   #,"Shuang.Mian" ,"Javelin.Throwers"
