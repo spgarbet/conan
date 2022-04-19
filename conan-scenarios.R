@@ -92,51 +92,51 @@ y <- y[, !colnames(y) %in% c(
   ,"Giant.Wolves"
   # 28 Scenarios opened (+1)
   
+  # D&D Interuption
+  ,"Giant.Spider" ,"Giant.Scorpion","Hyperborean.Primitive"
+  # 29 Scanarios opened (+1)
+  
   # Ladies & Gentlemen Part 1 (7 models)
-  ,"Zelata" ,"Belit..Savage." ,"Balthus.Slasher" ,"Ageera" ,"Belit..Brom." ,"Belit..Xavier."
-  # 36 Scenarios Opened (+8)
+  ,"Zelata" ,"Belit..Savage." ,"Balthus.Slasher" ,"Ageera" ,"Belit..Brom." ,"Belit..Xavier.","Akivasha"
+  # 41 Scenarios Opened (+12)
   
   # Undead palooza
-  #,"Mummies" 
-  # 38 Scenarios Opened (+2)  (15 models)
+  ,"Mummies" 
+  # 43 Scenarios Opened (+2)  (15 models)
   
   # King minions complete!
-  #,"Skeletons"
-  # 41 Scenarios Opened (+3)  (10 models)
-  
-  # Stingers
-  #,"Giant.Scorpion","Scorpion.Broodmother"
-  # 42 Scenarios Opened (+1) (11 models)
-  
+  ,"Skeletons", "Crows", "Bone.Golem"
+  # 51 Scenarios Opened (+8)  (10 models)
+
   # Critter festival
-  #,"Grey.Man.Ape", "Forest.Demon","Hyperborean.Primitive", "Crows"
-  # 50 Scenarios Opened (+8)  (8 models)
-  
-  # Most critters complete
-  #,"Giant.Spider", "Swamp.Demon",  "Bone.Golem"
-  # 60 Scenarios Opened (+10)  (3 models)
+  , "Grey.Man.Ape", "Forest.Demon", "Swamp.Demon", "Earth.Demon"
+  # 63 Scenarios Opened (+12)  (12 models)  
 
   # Wizards & and a Warrior (4 models)
-  #,"Pelias", "Warlock", "Natohk", "Niord"
-  # 75 Scenarios Opened (+15)
+   ,"Pelias", "Warlock", "Natohk", "Khemsa"
+  # 80 Scenarios Opened (+17)
   
-  # Ladies and Gents Part 2
-  #,"Akivasha", "Gitara", "Valkyrie", "Khemsa", "Atali"
-  # 89 Scenarios opened (+14)  (5 models)
+  ,"Scorpion.Broodmother"
+  ,"Atali", "Niord", "Kerim.Shah", "Kothian.Archer"
+  # (5 models)
+  
+  # Ladies and Gents Part 2, Campaign Unlocked
+  ,"Gitara", "Valkyrie"
+  # 89 Scenarios opened (+9)  (2 models + 2 art models)
 
   # Armoured (King Complete)
-  #,"Kerim.Shah", "Black.Dragons", "Kothian.Archer"
-  # 99 Scenarios opened (+10)  (7 Models)
+  ,"Black.Dragons"
+  # 99 Scenarios opened (+10)  (5 Models)
   
   #,"Crossbowmen" 
   # 100 Scenarios opened (+1) (10 models)
   
-  # Remaining critters, start Nordheim (3 models)
+  # Remaining critters, into Nordheim (3 models)
   #,"Giants" ,"Sabertooth.Tiger"
-  # 101 Scenarios opened (+1)
+  # 103 Scenarios opened (+3)
   
   #,"Kushite.Witch.Hunters"  
-  # 105 Scenarios opened (+4)  (5 models)
+  # 105 Scenarios opened (+2)  (4 models)
 
   # Finish Nordheim (15 models)
   #,"Aesir.Warriors" ,"Vanir.Warriors"
@@ -151,17 +151,19 @@ y <- y[, !colnames(y) %in% c(
   
   # Stygian complete (10 models)
   #,"Eternal.Guard","Assassins"
-  # 106 Scenarios opened (+5)
+  # 117 Scenarios opened (+6)
   
   # Khitai (22 models)
   #,"Shuang.Mian" ,"Javelin.Throwers"
   #,"Honor.Guards" ,"Khitan.Guards"
-  #,"Foo.Dogs" ,"Earth.Demon"
+  #,"Foo.Dogs"
 
-  #, "Earth.Demon"
-  #,"Dragon" # Use Proxy... (1 model)
+  #, "Dragon" (1 model)
+  # 130 Scenarios Unlocked!
 
 )]
 
 cat("\n\nFrom What I have painted!\n")
 doit(y)
+
+  
