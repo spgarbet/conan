@@ -69,16 +69,15 @@ paint_order <- function(y)
       
       for (i in possibilities) # Consider each scenario
       {
-        paints  <- y[i, ]
-        if(length(paints)==1) names(paints) <- colnames(y) # Don't know why this is necessary, stupid R
-        opens   <- apply(y,1,function(x) all(x==paints))
-        touches <- sum(y[, paints==1, drop=FALSE])
+        paints  <- y[i, ,drop=FALSE]
+        opens   <- apply(y,1,function(x) all(x==paints[1,]))
+        touches <- sum(y[, paints[1,]==1, drop=FALSE])
       
         if (touches > previous)
         {
           previous  <- touches
           chosen    <- names(opens[opens])
-          eliminate <- names(paints)[paints > 0]
+          eliminate <- colnames(paints)[paints[1,] > 0]
         }
       }
 
@@ -116,7 +115,7 @@ print_order <- function(z)
   }
 }
 
-#print_order(paint_order(y))
+print_order(paint_order(y))
 
 
 # 2nd Run with what I randomly painted already eliminated
